@@ -1,20 +1,15 @@
-// definiendo un objeto
+const titulo = document.createElement('h1')
+titulo.innerText = 'Insetar texto aqui'
 
-const usuario = {
-    nombre: 'Pepito',
-    apellido: 'Alvarez',
-    edad: 20,
-    Direccion:{
-        pais: 'Dinamarca',
-        ciudad: 'Copenhagen',
-        calle: 'Calle Falsa',
-        numero: '123'
-    },
-    amigos:['Juan','Pedro','Maria'],
-    activo: true,
-    enviarCorreo: function(){
-        return 'Enviando correo...'
-    }
-}
+const boton = document.createElement('button')
+boton.innerText = 'click'
 
-console.log(usuario)
+
+boton.addEventListener('click', function(){
+    titulo.innerText = 'Otro texto'
+})
+
+
+document.body.append(titulo)
+document.body.append(boton)
+

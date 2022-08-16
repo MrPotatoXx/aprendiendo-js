@@ -29,3 +29,24 @@ console.log(mostrarArreglo())
 
 const mostrarObjeto = () => ({nombre: 'Juan'})
 console.log(mostrarObjeto())
+
+//---
+
+
+
+const boton2 = document.createElement('button')
+boton2.innerText = 'autorizado'
+boton2.style= 'background-color: #3e3e3e; color: white;'
+
+const autorizado = true
+
+boton2.addEventListener('click', () => {
+    if(autorizado){
+        alert('autorizado')
+    }else{
+        alert('no autorizado')
+    }
+} )
+document.body.append(boton2)
+
+

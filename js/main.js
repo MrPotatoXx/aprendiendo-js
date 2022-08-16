@@ -13,3 +13,19 @@ boton.addEventListener('click', function(){
 document.body.append(titulo)
 document.body.append(boton)
 
+//Creando una funcion flecha
+
+const mostrarTexto = () => 'Hola'
+console.log(mostrarTexto())
+
+const mostrarNumero = () =>  2
+console.log(mostrarNumero())
+
+const mostrarBooleano = () => true
+console.log(mostrarBooleano())
+
+const mostrarArreglo = () => ['Hola', 'Mundo']
+console.log(mostrarArreglo())
+
+const mostrarObjeto = () => ({nombre: 'Juan'})
+console.log(mostrarObjeto())
